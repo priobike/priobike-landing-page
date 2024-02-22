@@ -92,22 +92,3 @@ a { color: inherit; }
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-@media only screen and (max-width: 1000px) {
-    /* Adjust styles for smaller screens */
-    .heading {
-        font-size: 4rem;
-    }
-
-    .footnote {
-        font-size: 3rem;
-    }
-
-    .downloads-container {
-        top: 25%;
-    }
-
-    .download {
-        width: 400px;
-    }
-}
