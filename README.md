@@ -11,6 +11,8 @@ To deploy updates of this landing page, access the priobike.vkw.tu-dresden.de VM
 - `eval $(ssh-agent)`
 - `ssh-add ~/.ssh/landing-page-key`
 - `git pull`
+- `cd ../`
+- `chown -R nginx priobike-landing-page/`
 - `exit`
 
 ## Initial deployment
@@ -20,6 +22,7 @@ To deploy this landing page, access the priobike.vkw.tu-dresden.de VM via SSH an
 - `eval $(ssh-agent)`
 - `ssh-add ~/.ssh/landing-page-key`
 - `git clone git@github.com:priobike/priobike-landing-page.git`
+- `chown -R nginx priobike-landing-page/`
 - `exit`
 
 Make sure that the Nginx config is valid (https://github.com/priobike/priobike-vkw-config/blob/main/etc/nginx/conf.d/default.conf).
