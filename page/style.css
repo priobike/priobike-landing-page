@@ -82,6 +82,17 @@ body {
     width: 180px;
 }
 
+a { color: inherit; } 
+
+.impressum-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @media only screen and (max-width: 1000px) {
     /* Adjust styles for smaller screens */
     .heading {
