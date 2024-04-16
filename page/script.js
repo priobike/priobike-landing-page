@@ -1,5 +1,5 @@
 function isIOS() {
-  return navigator.userAgent.indexOf("like Mac") != -1;
+  return navigator.userAgent.indexOf("iPhone") != -1;
 }
 
 function isSafari() {
@@ -9,7 +9,7 @@ function isSafari() {
 if (isIOS()) {
   if (!isSafari()) {
     alert(
-      "Um den Link in der PrioBike öffnen zu können, muss der Link in Safari geöffnet werden."
+      "Um den Link in der PrioBike öffnen zu können, muss der Link auf Deinem iPhone mit Safari geöffnet werden."
     );
   }
 }
