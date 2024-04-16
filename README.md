@@ -8,6 +8,7 @@ It gets deployed using our main Nginx (https://github.com/priobike/priobike-vkw-
 
 To deploy updates of this landing page, access the priobike.vkw.tu-dresden.de VM via SSH and navigate to the directory `/var/www/priobike-landing-page`. There, you need to pull the newest version of the landing page. To do so you need to perform the following commands (root is required because of the `/var/www` directory):
 - `sudo -E -s` (runs shell as root user while preserving the old (admin) user environment, this is required because the key is there)
+- `cd /var/www/priobike-landing-page`
 - `eval $(ssh-agent)`
 - `ssh-add ~/.ssh/landing-page-key`
 - `git pull`
@@ -19,6 +20,7 @@ To deploy updates of this landing page, access the priobike.vkw.tu-dresden.de VM
 
 To deploy this landing page, access the priobike.vkw.tu-dresden.de VM via SSH and navigate to the directory `/var/www`. There, you need to clone the repository. To do so you need to perform the following commands (root is required because of the `/var/www` directory):
 - `sudo -E -s` (runs shell as root user while preserving the old (admin) user environment, this is required because the key is there)
+- `cd /var/www`
 - `eval $(ssh-agent)`
 - `ssh-add ~/.ssh/landing-page-key`
 - `git clone git@github.com:priobike/priobike-landing-page.git`
