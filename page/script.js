@@ -5,7 +5,7 @@ var isChrome = navigator.userAgent.indexOf("CriOS") != -1;
 var isEdge = navigator.userAgent.indexOf("EdgiOS") != -1;
 var isOpera = navigator.userAgent.indexOf("OPT") != -1;
 
-if (isIOS()) {
+if (isIOS) {
   if (isFirefox || isChrome || isEdge || isOpera) {
     alert(
       "Um den Link in der PrioBike öffnen zu können, muss der Link auf Deinem iPhone mit Safari geöffnet werden."
