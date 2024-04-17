@@ -32,7 +32,11 @@
 }
 
 .footnote {
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+#ios-note {
+    font-size: 0.7rem;
 }
 
 .heading {
